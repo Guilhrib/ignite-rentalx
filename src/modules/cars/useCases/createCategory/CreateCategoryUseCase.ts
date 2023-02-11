@@ -1,4 +1,3 @@
-import { CategoryRepository } from "../../repositories/CategoryRepository";
 import { ICategoryRepository } from "../../repositories/ICategoryRepository";
 
 interface IRequest {
