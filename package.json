@@ -1,10 +1,11 @@
 {
   "name": "ignite-rentalx",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.ts",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
   },
   "dependencies": {
     "csv-parse": "^5.4.0",
