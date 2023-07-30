@@ -1,6 +1,6 @@
 import { DataSource } from "typeorm";
 
-export const myAppDataSource = new DataSource({
+const myAppDataSource = new DataSource({
   type: "postgres",
   port: 5432,
   host: "postgres",
@@ -15,3 +15,5 @@ export const myAppDataSource = new DataSource({
 myAppDataSource.initialize()
   .then(() => console.log("Database connected"))
   .catch((err) => console.log(err))
+
+export default myAppDataSource
