@@ -6,6 +6,7 @@ import { categoriesRoutes } from "./routes/categories.routes"
 import { specificationRoutes } from "./routes/specification.routes"
 
 import './database'
+import './shared/container'
 
 const app = express()
 
