@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "migration-up": "ts-node-dev ./node_modules/typeorm/cli migration:run '-d' ./src/database"
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
+    "migration-up": "ts-node-dev ./node_modules/typeorm/cli migration:run '-d' ./src/database",
+    "migration-down": "ts-node-dev ./node_modules/typeorm/cli migration:revert '-d' ./src/database"
   },
   "dependencies": {
     "csv-parse": "^5.4.0",
