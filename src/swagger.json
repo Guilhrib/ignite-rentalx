@@ -117,7 +117,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$red": "#/definitions/Specification"
+                "$ref": "#/definitions/Specification"
               }
             }
           }
