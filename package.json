@@ -10,6 +10,7 @@
     "migration-down": "ts-node-dev ./node_modules/typeorm/cli migration:revert '-d' ./src/database"
   },
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "csv-parse": "^5.4.0",
     "express": "^4.18.2",
     "multer": "^1.4.5-lts.1",
@@ -21,6 +22,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/express": "^4.17.14",
     "@types/multer": "^1.4.7",
     "@types/swagger-ui-express": "^4.1.3",
