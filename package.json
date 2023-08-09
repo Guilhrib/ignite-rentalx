@@ -7,7 +7,8 @@
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
     "migration-up": "ts-node-dev ./node_modules/typeorm/cli migration:run '-d' ./src/database",
-    "migration-down": "ts-node-dev ./node_modules/typeorm/cli migration:revert '-d' ./src/database"
+    "migration-down": "ts-node-dev ./node_modules/typeorm/cli migration:revert '-d' ./src/database",
+    "test": "jest"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -26,10 +27,13 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/express": "^4.17.14",
+    "@types/jest": "^29.5.3",
     "@types/jsonwebtoken": "^9.0.2",
     "@types/multer": "^1.4.7",
     "@types/swagger-ui-express": "^4.1.3",
     "@types/uuid": "^8.3.4",
+    "jest": "^29.6.2",
+    "ts-jest": "^29.1.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.8.4"
   }
